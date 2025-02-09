@@ -4,3 +4,8 @@
 .body-container{
     border: 2px black solid;
 }
+
+.footer-container{
+    background-color: black;
+    color: white;
+}
