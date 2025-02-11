@@ -1,6 +1,10 @@
 .title {
     font-weight: bold;
 }
+
+.header-container{
+    background-color: aqua;
+}
 .body-container{
     border: 2px black solid;
 }
