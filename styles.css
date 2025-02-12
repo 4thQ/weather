@@ -4,6 +4,8 @@
 
 .header-container{
     background-color: aqua;
+    color: white;
+    
 }
 .body-container{
     border: 2px black solid;
