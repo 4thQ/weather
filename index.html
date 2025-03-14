@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="weather.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weatheria</title>
@@ -12,9 +14,11 @@
 
     <div class="body-container">
       <label for="userInput">Location</label>
-      <input type="text" name="userInput" />
+      <input type="text" name="userInput" placeholder="Enter your city..." />
       <button class="submit-btn" type="submit">Submit</button>
     </div>
+
+    <div class="weather-info"></div>
 
     <div class="footer-container">Made by Nirajan G</div>
   </body>
