@@ -59,6 +59,7 @@ async function displayWeather(location) {
       <p>Wind Speed: ${processedData.windSpeed} km/h</p>
     `;
     weatherInfoContainer.classList.add("visible");
+    localStorage.setItem("lastLocation", location);
   } catch (error) {
     console.error("Error fetching weather data:", error);
     weatherInfoContainer.innerHTML = `<p>Invalid input</p>`;
@@ -69,4 +70,13 @@ async function displayWeather(location) {
 document.querySelector(".submit-btn").addEventListener("click", () => {
   let location = document.querySelector("input[name='userInput']").value;
   displayWeather(location);
+});
+
+// Load the last searched location from local storage on page load
+document.addEventListener("DOMContentLoaded", () => {
+  let lastLocation = localStorage.getItem("lastLocation");
+  if (lastLocation) {
+    document.querySelector("input[name='userInput']").value = lastLocation;
+    displayWeather(lastLocation);
+  }
 });
