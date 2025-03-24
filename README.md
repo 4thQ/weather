@@ -1,3 +1,4 @@
+##UNDER CONSTRUCTION 
 ## Weather App
 
 Simple JavaScript-based Weather Application that allows users to search for weather details of multiple cities and view them in a card layout. The app utilizes the OpenWeather API for real-time weather data.
